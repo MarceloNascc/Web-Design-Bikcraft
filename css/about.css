@@ -1,0 +1,26 @@
+section.about-introduction {
+  background: url("../img/bg-sobre.png") no-repeat center;
+}
+
+.mission {
+  margin-top: 60px;
+}
+
+.mission div:nth-child(3) > img {
+  margin-top: 30px;
+}
+
+.mission div:nth-child(1) {
+  padding-right: 60px;
+}
+
+.mission p, .mission ul li {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 1em;
+}
+
+.mission ul li {
+  line-height: 10px;
+  font-family: "Amaranth", "Times New Roman", serif;
+}
