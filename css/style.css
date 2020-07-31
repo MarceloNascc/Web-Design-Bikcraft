@@ -50,7 +50,7 @@ a.black-btn:hover {
   margin: 25px auto 10px;
 }
 
-/* Header */
+/* header */
 header.header {
   position: fixed;
   top: 0;
@@ -137,6 +137,7 @@ blockquote.external-quote cite {
 
 /* products */
 .products {
+  text-align: center;
   margin: 120px auto 60px;
 }
 
@@ -174,8 +175,32 @@ blockquote.external-quote cite {
 .call-to-action {
   clear: both;
   padding-top: 40px;
+  text-align: center;
 }
 
 .call-to-action p {
   margin-bottom: 20px;
+}
+
+/* portfolio */
+.portfolio {
+  width: 100%;
+  background-color: #000000;
+  padding: 40px 0px;
+}
+
+.portfolio .subtitle {
+  color: #FEC63E;
+}
+
+.portfolio .subtitle::after {
+  background-color: #FEC63E;
+}
+
+.portfolio > div > ul li:last-child {
+  margin-top: 20px;
+}
+
+.portfolio .call-to-action p {
+  color: #FFFFFF;
 }
