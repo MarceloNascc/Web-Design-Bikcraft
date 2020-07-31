@@ -3,7 +3,11 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
+img {
+  display: block;
+}
+
+p, li.paragraph {
   font-family: "Amaranth", "Times New Roman", serif;
   font-size: 14px;
   line-height: 20px;
@@ -95,7 +99,7 @@ section.introduction {
   background: url("../img/bg-intro.png") no-repeat center;
   background-size: cover;
 
-  margin-top: 86px;
+  margin-top: 82px;
 
   text-align: center;
 }
@@ -138,20 +142,20 @@ blockquote.external-quote cite {
 /* products */
 .products {
   text-align: center;
-  margin: 120px auto 60px;
+  margin: 80px auto 60px;
 }
 
-.list_products li {
+.list-products li {
   background-color: #FEC63E;
   box-shadow: 0px 3px 4px #575757;
 }
 
-.list_products li > div {
+.list-products li > div {
   background-color: #000000;
   padding: 20px;
 }
 
-.list_products li > h3 {
+.list-products li > h3, .list-quality li > h3 {
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
@@ -159,11 +163,11 @@ blockquote.external-quote cite {
   letter-spacing: .1em;
 }
 
-.list_products li > p {
+.list-products li > p, .list-quality li > p {
   padding: 10px 20px 20px;
 }
 
-.list_products li > h3::after {
+.list-products li > h3::after, .list-quality li > h3::after {
   content: "";
   display: block;
   width: 60px;
@@ -203,4 +207,104 @@ blockquote.external-quote cite {
 
 .portfolio .call-to-action p {
   color: #FFFFFF;
+}
+
+/* quality */
+.quality {
+  margin-top: 60px;
+}
+
+.quality::after {
+  content: "";
+  width: 100%;
+  height: 83px;
+  display: block;
+  background: url("../img/linhas.svg") no-repeat center;
+  position: absolute;
+  top: 143px;
+  z-index: -1;
+}
+
+.quality img {
+  margin: 0px auto;
+}
+
+.list-quality li {
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.list-quality li > h3 {
+  margin-top: 35px;
+}
+
+/* breaking */
+.breaking {
+  padding-top: 40px;
+  margin-top: 60px;
+  height: 220px;
+  background: url("../img/bg-footer.png") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+.breaking .external-quote {
+  max-width: 400px;
+}
+
+/* footer */
+footer {
+  background-color: #FEC63E;
+}
+
+footer .footer {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 20px;
+}
+
+footer .footer div > h3 {
+  font-size: 18px;
+  line-height: 25px;
+  color: #FEC63E;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: bold;
+}
+
+footer .footer div > h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #FEC63E;
+  margin: 25px 0px 10px;
+}
+
+div#history {
+  padding-right: 40px;
+}
+
+div#social-networks ul li {
+  display: inline-block;
+  border: 3px solid #FEC63E;
+  margin-right: 5px;
+  transition: border-color 1s;
+}
+
+div#social-networks ul li:hover {
+  border-color: #FFFFFF;
+}
+
+div#social-networks ul li a {
+  display: block;
+  padding: 10px;
+}
+
+div#copy {
+  padding: 20px 0px;
+}
+
+div#copy p {
+  font-weight: bold;
 }
