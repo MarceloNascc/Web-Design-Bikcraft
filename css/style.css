@@ -25,10 +25,36 @@ a.btn:hover {
   color: #FFFFFF;
 }
 
+a.black-btn:hover {
+  border-color: #000000;
+  color: #000000;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: .1em;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.subtitle::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  margin: 25px auto 10px;
+}
+
 /* Header */
 header.header {
   position: fixed;
   top: 0;
+  z-index: 1;
 
   width: 100%;
   padding: 10px 0px;
@@ -72,7 +98,6 @@ section.introduction {
   margin-top: 86px;
 
   text-align: center;
-  color: #FFFFFF;
 }
 
 section.introduction h1 {
@@ -80,12 +105,14 @@ section.introduction h1 {
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 80px;
+  color: #FFFFFF;
 }
 
 blockquote.external-quote {
   max-width: 320px;
   margin: auto;
   margin-bottom: 40px;
+  color: #FFFFFF;
 }
 
 blockquote.external-quote p {
@@ -106,4 +133,49 @@ blockquote.external-quote cite {
   font-weight: bold;
   font-size: 14px;
   letter-spacing: .1em;
+}
+
+/* products */
+.products {
+  margin: 120px auto 60px;
+}
+
+.list_products li {
+  background-color: #FEC63E;
+  box-shadow: 0px 3px 4px #575757;
+}
+
+.list_products li > div {
+  background-color: #000000;
+  padding: 20px;
+}
+
+.list_products li > h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.list_products li > p {
+  padding: 10px 20px 20px;
+}
+
+.list_products li > h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #000000;
+  margin: 25px auto 10px;
+}
+
+.call-to-action {
+  clear: both;
+  padding-top: 40px;
+}
+
+.call-to-action p {
+  margin-bottom: 20px;
 }
