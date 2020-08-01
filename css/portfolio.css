@@ -1,0 +1,9 @@
+section.portfolio-introduction {
+  background: url("../img/bg-portfolio.png") no-repeat center;
+  background-size: cover;
+}
+
+.quote-portfolio .external-quote {
+  text-align: center;
+  color: #000000;
+}
