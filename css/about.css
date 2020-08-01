@@ -1,5 +1,6 @@
 section.about-introduction {
   background: url("../img/bg-sobre.png") no-repeat center;
+  background-size: cover;
 }
 
 .mission {
