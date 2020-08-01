@@ -99,7 +99,7 @@ div.info ul li {
   line-height: 25px;
 }
 
-.form input, textarea {
+.form input, .form textarea {
   display: block;
   width: 100%;
   background-color: #000000;
