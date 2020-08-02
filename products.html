@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/products.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -32,24 +33,25 @@
 
   <section class="internal-introduction products-introduction">
     <div class="container">
-      <h1>Produtos</h1>
-      <p>Conheça todos os nossos produtos</p>
+      <h1 data-anime="500" class="fadeInDown">Produtos</h1>
+      <p data-anime="600" class="fadeInDown">Conheça todos os nossos produtos</p>
     </div>
   </section>
 
   <section class="product container">
     <div class="grid-11">
       <img src="img/products/bikcraft-passeio-1.png" alt="modelo 1 de bicicleta para passeios">
-      <h2>Passeio</h2>
+      <h2 data-anime="900" class="fadeInDown">Passeio</h2>
     </div>
     <div class="icon grid-5">
-      <img src="img/products/passeio.svg" alt="icone de bicicleta para passeios">
+      <img data-anime="900" class="fadeInDown" src="img/products/passeio.svg" alt="icone de bicicleta para passeios">
     </div>
     <div class="grid-8">
       <img src="img/products/bikcraft-passeio-2.png" alt="modelo 2 de bicicleta para passeios">
     </div>
     <div class="info grid-8">
-      <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida contidiana. O verdadeiro segredo da felicidade está em ter um gen</p>
+      <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida contidiana. O
+        verdadeiro segredo da felicidade está em ter um gen</p>
       <ul>
         <li>Conforto</li>
         <li>Velocidade</li>
@@ -62,16 +64,17 @@
   <section class="product container">
     <div class="grid-11">
       <img src="img/products/bikcraft-esporte-1.png" alt="modelo 1 de bicicleta para esportes">
-      <h2>Esporte</h2>
+      <h2 data-anime="900" class="fadeInDown">Esporte</h2>
     </div>
     <div class="icon grid-5">
-      <img src="img/products/esporte.svg" alt="icone de bicicleta para esportes">
+      <img data-anime="900" class="fadeInDown" src="img/products/esporte.svg" alt="icone de bicicleta para esportes">
     </div>
     <div class="grid-8">
       <img src="img/products/bikcraft-esporte-2.png" alt="modelo 2 de bicicleta para esportes">
     </div>
     <div class="info grid-8">
-      <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida contidiana. O verdadeiro segredo da felicidade está em ter um gen</p>
+      <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida contidiana. O
+        verdadeiro segredo da felicidade está em ter um gen</p>
       <ul>
         <li>Conforto</li>
         <li>Velocidade</li>
@@ -84,16 +87,17 @@
   <section class="product container">
     <div class="grid-11">
       <img src="img/products/bikcraft-retro-1.png" alt="modelo 1 de bicicleta retrô">
-      <h2>Retrô</h2>
+      <h2 data-anime="900" class="fadeInDown">Retrô</h2>
     </div>
     <div class="icon grid-5">
-      <img src="img/products/retro.svg" alt="icone de bicicleta retrô">
+      <img data-anime="900" class="fadeInDown" src="img/products/retro.svg" alt="icone de bicicleta retrô">
     </div>
     <div class="grid-8">
       <img src="img/products/bikcraft-retro-2.png" alt="modelo 2 de bicicleta retrô">
     </div>
     <div class="info grid-8">
-      <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida contidiana. O verdadeiro segredo da felicidade está em ter um gen</p>
+      <p>O verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida contidiana. O
+        verdadeiro segredo da felicidade está em ter um gen</p>
       <ul>
         <li>Conforto</li>
         <li>Velocidade</li>
@@ -106,20 +110,20 @@
   <section class="budget">
     <div class="container">
       <h2 class="subtitle">Orçamento</h2>
-      <form id="budget-form" class="form grid-8">
+      <form method="POST" action="enviar.php"  id="budget-form" class="form grid-8">
         <label for="name">Nome</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" required>
 
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email">
+        <input type="email" name="email" id="email" required>
 
         <label for="phone">Telefone</label>
         <input type="text" name="phone" id="phone">
 
         <label for="message">Mensagem</label>
-        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <textarea required name="message" id="message" cols="30" rows="10"></textarea>
 
-        <button type="submit">ENVIAR</button>
+        <button id="enviar" name="enviar" type="submit">ENVIAR</button>
       </form>
 
       <div class="datas grid-8">
@@ -184,6 +188,9 @@
       <p class="grid-16">Bikcraft 2019 - Alguns direitos reservados</p>
     </div>
   </footer>
+
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

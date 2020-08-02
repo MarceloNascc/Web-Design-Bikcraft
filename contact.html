@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -32,26 +33,26 @@
 
   <section class="internal-introduction contact-introduction">
     <div class="container">
-      <h1>Contato</h1>
-      <p>Tire as suas dúvidas com a gente</p>
+      <h1 data-anime="500" class="fadeInDown">Contato</h1>
+      <p data-anime="600" class="fadeInDown">Tire as suas dúvidas com a gente</p>
     </div>
   </section>
 
   <section class="contact container">
-    <form id="contact-form" class="contact-form grid-8">
+    <form method="POST" action="enviar.php" id="contact-form" class="contact-form grid-8">
       <label for="name">Nome</label>
-      <input type="text" name="name" id="name">
+      <input type="text" name="name" id="name" required>
 
       <label for="email">E-mail</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" required>
 
       <label for="phone">Telefone</label>
       <input type="text" name="phone" id="phone">
 
       <label for="message">Mensagem</label>
-      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+      <textarea required name="message" id="message" cols="30" rows="10"></textarea>
 
-      <button type="submit">ENVIAR</button>
+      <button id="enviar" name="enviar" type="submit">ENVIAR</button>
     </form>
 
     <div class="contact-datas grid-8">
@@ -121,6 +122,9 @@
       <p class="grid-16">Bikcraft 2019 - Alguns direitos reservados</p>
     </div>
   </footer>
+
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

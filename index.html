@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -31,21 +32,21 @@
 
   <section class="introduction">
     <div class="container">
-      <h1>BICICLETAS FEITAS A MÃO</h1>
+      <h1 class="fadeInDown" data-anime="500">BICICLETAS FEITAS A MÃO</h1>
 
-      <blockquote class="external-quote">
+      <blockquote data-anime="600" class="fadeInDown external-quote">
         <p>“Não tenha nada em sua casa que você não considere útil ou acredita ser bonito”</p>
         <cite>WILLIAM MORRIS</cite>
       </blockquote>
 
-      <a href="produtos.html" class="btn">Orçamento</a>
+      <a data-anime="800" href="produtos.html" class="fadeInDown btn">Orçamento</a>
     </div>
   </section>
 
   <section class="products container">
     <h2 class="subtitle">Produtos</h2>
     <ul class="list-products">
-      <li class="grid-1-3">
+      <li data-anime="1600" class="fadeInDown grid-1-3">
         <div>
           <img src="img/products/passeio.svg" alt="Bikcraft passeio">
         </div>
@@ -53,7 +54,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </li>
 
-      <li class="grid-1-3">
+      <li data-anime="1800" class="fadeInDown grid-1-3">
         <div>
           <img src="img/products/esporte.svg" alt="Bikcraft esporte">
         </div>
@@ -61,7 +62,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </li>
 
-      <li class="grid-1-3">
+      <li data-anime="2000" class="fadeInDown grid-1-3">
         <div>
           <img src="img/products/retro.svg" alt="Bikcraft retrô">
         </div>
@@ -163,6 +164,9 @@
       <p class="grid-16">Bikcraft 2019 - Alguns direitos reservados</p>
     </div>
   </footer>
+
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

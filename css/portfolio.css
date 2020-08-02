@@ -3,7 +3,34 @@ section.portfolio-introduction {
   background-size: cover;
 }
 
-.quote-portfolio .external-quote {
+.quote-portfolio .internal-quote {
   text-align: center;
   color: #000000;
+}
+
+blockquote.internal-quote {
+  max-width: 320px;
+  margin: auto;
+  margin-bottom: 40px;
+  color: #FFFFFF;
+}
+
+blockquote.internal-quote p {
+  font-style: italic;
+}
+
+blockquote.internal-quote p::before, blockquote.internal-quote p::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #FFFFFF;
+  margin: 25px auto 10px;
+}
+
+blockquote.internal-quote cite {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: .1em;
 }

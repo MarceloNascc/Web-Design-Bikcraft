@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/portfolio.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -32,23 +33,43 @@
 
   <section class="internal-introduction portfolio-introduction">
     <div class="container">
-      <h1>Portfólio</h1>
-      <p>Conheça os projetos que amamos mostrar</p>
+      <h1 data-anime="500" class="fadeInDown">Portfólio</h1>
+      <p data-anime="600" class="fadeInDown">Conheça os projetos que amamos mostrar</p>
     </div>
   </section>
 
-  <section class="quote-portfolio container">
-    <blockquote class="external-quote">
+  <section class="quote-portfolio container" data-slide="quote">
+    <blockquote class="internal-quote">
       <p>“No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.”</p>
       <cite>Barbara Moss</cite>
+    </blockquote>
+
+    <blockquote class="internal-quote">
+      <p>“No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.”</p>
+      <cite>Barbara Moss 2</cite>
+    </blockquote>
+
+    <blockquote class="internal-quote">
+      <p>“No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.”</p>
+      <cite>Barbara Moss 3</cite>
+    </blockquote>
+
+    <blockquote class="internal-quote">
+      <p>“No mundo atual, a contínua expansão de nossa atividade cumpre um papel essencial na formulação da gestão inovadora da qual fazemos parte.”</p>
+      <cite>Barbara Moss 4</cite>
     </blockquote>
   </section>
 
   <section class="portfolio">
-    <div class="container">
+    <div class="container" data-slide="portfolio">
       <ul>
         <li class="grid-8"><img src="img/portfolio/retro.png" alt="bicicleta retrô"></li>
         <li class="grid-8"><img src="img/portfolio/passeio.png" alt="bicicleta passeio"></li>
+        <li class="grid-16"><img src="img/portfolio/esporte.png" alt="bicicleta esporte"></li>
+      </ul>
+      <ul>
+        <li class="grid-8"><img src="img/portfolio/passeio.png" alt="bicicleta passeio"></li>
+        <li class="grid-8"><img src="img/portfolio/retro.png" alt="bicicleta retrô"></li>
         <li class="grid-16"><img src="img/portfolio/esporte.png" alt="bicicleta esporte"></li>
       </ul>
     </div>
@@ -98,6 +119,10 @@
       <p class="grid-16">Bikcraft 2019 - Alguns direitos reservados</p>
     </div>
   </footer>
+
+  <script src="js/simple-slide.js"></script>
+  <script src="js/simple-anime.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
