@@ -1,10 +1,15 @@
 /* general styles */
+* {
+  transition: color 1s, border-color 1s;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 p, li.paragraph {
@@ -345,8 +350,11 @@ div#history {
 div#social-networks ul li {
   display: inline-block;
   border: 3px solid #FEC63E;
-  margin-right: 5px;
   transition: border-color 1s;
+}
+
+div#social-networks ul li:nth-of-type(1), div#social-networks ul li:nth-of-type(2) {
+  margin-right: 5px;
 }
 
 div#social-networks ul li:hover {
