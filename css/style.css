@@ -208,6 +208,10 @@ section.internal-introduction p {
   padding: 20px;
 }
 
+.list-products li > div > img {
+  margin: 0px auto;
+}
+
 .list-products li > h3, .list-quality li > h3 {
   font-weight: bold;
   font-size: 18px;
