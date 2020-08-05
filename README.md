@@ -1,5 +1,5 @@
 # Curso de Web Design - Bikcraft
-Esse projeto foi feito durante o curso de **Web Design Completo** da [Origamid](https://www.origamid.com) que fornece uma visão inicial do desenvolvimento de sites. Tendo uma ótima introdução para criação do design, codificação e hospedagem.
+Esse projeto foi feito durante o curso de **Web Design Completo** da [Origamid](https://www.origamid.com) e fornece uma visão inicial do desenvolvimento de sites. Tendo uma ótima introdução para criação do design, codificação e hospedagem.
 Para a criação desse site foi usado apenas as tecnologias básicas para o desenvolvimento web:
 * [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
